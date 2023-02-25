@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="signupPage.css"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/17305c1313.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/geexp7D.jpeg">
+        <title>Sign Up</title>
+        <style>
+            *body {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+            }
+            .container {
+                width: 100vw;
+                height: 100vh;
+                background-color:lightseagreen;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box {
+                width: 40vw;
+                height: 80vh;
+                background-color: #fff;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            .name {
+                font-size: 60px;
+                margin: 20px 0 10px 0;
+                display: flex;
+                justify-content: center;
+                font-family: 'poppins';
+                font-weight: 400;
+                font-style: oblique;
+            }
+            .line {
+                border-top: 1px solid black;
+                width: 35vw;
+                margin: auto;
+            }
+            .signinp {
+                font-size: 40px;
+                margin: 10px 0 10px 0;
+                display: flex;
+                justify-content: center;
+                font-family: 'poppins';
+                font-weight: 400;
+                font-style: oblique;
+            }
+            .main-box {
+                width: 30vw;
+                height: 250px;
+                margin: auto;
+            }
+            label {
+                font-size: 20px;
+            }
+            input {
+                height: 20px;
+                font-size: 15px;
+                margin: 5px 0;
+            }
+            .i1 {
+                margin-left: 60px;
+            }
+            .i2 {
+                margin-left: 60px;
+            }
+            .i3 {
+                margin-left: 100px;
+            }
+
+            .i4 {
+                margin-left: 55px;
+            }
+            .i5 {
+                margin-left: 70px;
+            }
+            .i6 {
+                margin-left: 0px;
+            }
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+            }
+            button {
+                padding: 5px 8px;
+                border: 1px solid black;
+                border-radius: 5px;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+            }
+            button:hover {
+                color: gray;
+            }
+            bottun:active {
+                color: #fff;
+                background-color: black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <p class="name">IIT Jodhpur</p>
+                <div class="line"></div>
+                <p class="signinp">Sign In</p>
+                <div class="main-box">
+                    <form actions="/signup" method="post">
+                        {% csrf_token %}
+                        <label for="">First Name :</label>
+                        <input type="text" id="firstname" name="firstname"placeholder="Enter your firstname"Required class="i1">
+                        <br>
+                        <label for="">Last Name :</label>
+                        <input type="text" id="lastname" name="lastname"  placeholder="Enter your lastname"Required class="i2">
+                        <br>
+                        <label for="">Email :</label>
+                        <input type="text" id="Email"  name="Email" placeholder="Enter your email" Required class="i3">
+                        <br>
+                        <label for="">User Name :</label>
+                        <input type="text" id="username" name="username" placeholder="create a username"Required class="i4">
+                        <br>
+                        <label for="">Password :</label>
+                        <input type="text" id="password1" name="password1" placeholder="create a password" Required class="i5">
+                        <br>
+                        <label for="">Confirm Password :</label>
+                        <input type="text" id="password2" name="password2" placeholder="confirm password"Required class="i6">
+                        <br>
+                        <div class="btn">
+                            <button type="submit">signup</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

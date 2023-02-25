@@ -1,0 +1,10 @@
+
+        {% autoescape off %}
+
+        welcome to IIT jodhpur
+        
+        Hello {{ name }}!
+        please confirm your mail by clicking here
+        Confirmation Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+        {% endautoescape %}
+    

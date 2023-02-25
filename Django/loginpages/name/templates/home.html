@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/17305c1313.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/geexp7D.jpeg">
+        <title>AUTENTICATION</title>
+        <style>
+            *body {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+            }
+            .container {
+                width: 100vw;
+                height: 100vh;
+                background-color:pink;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box {
+                width: 50vw;
+                height: 60vh;
+                background-color: #fff;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            .name {
+                font-size: 100px;
+                margin: 60px 0 10px 0;
+                display: flex;
+                justify-content: center;
+                font-family: 'poppins';
+                font-weight: 400;
+                font-style: oblique;
+            }
+            .row {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            button {
+                padding: 8px 10px;
+                border: 2px solid black;
+                font-size: 20px;
+                border-radius: 5px;
+                margin: 0 15px;
+
+            }
+            @media screen and (max-width: 600px) {
+                .box {
+                    width: 80vw;
+                    height: 60vh;
+                    background-color: #fff;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+                .name {
+                    font-size: 80px;
+                    margin: 60px 0 10px 0;
+                    display: flex;
+                    justify-content: center;
+                    font-family: 'poppins';
+                    font-weight: 400;
+                    font-style: oblique;
+                }
+                .row {
+                    margin-top: 80px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+                button {
+                    padding: 8px 10px;
+                    border: 2px solid black;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    margin: 0 15px;
+                
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <p class="name">IIT Jodhpur</p>
+                <div class="row">
+                    <button onclick="window.location.href='/home/signup'">Sign Up</button>
+                    <button onclick="window.location.href='/home/signin'">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

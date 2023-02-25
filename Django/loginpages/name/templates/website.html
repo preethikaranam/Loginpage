@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewreport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="loginpage.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>AUTHENTIFICATION</title>
+    </head>
+    <body>
+       <h1>IIT JODHPUR</h1>
+       {% if authen.is_authenticated %}
+       <h2>HELLO<br>{{firstname}}</h2>
+       <h3>login is successfull</h3><br>
+       <button type="submit"><a href="/home/signout">signout</a></button>
+       {% else %}
+
+       <button type="submit"><a href="/home/signup">signup</a></button>
+
+       <button type="submit"><a href="/home/signin">signin</a></button>
+       {% endif %}
+
+    </body>
+</html>

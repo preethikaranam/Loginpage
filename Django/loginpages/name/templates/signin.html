@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/17305c1313.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/geexp7D.jpeg">
+        <title>Sign In</title>
+        <style>
+            *body {
+                    box-sizing: border-box;
+                }
+                body {
+                    margin: 0;
+                }
+                .container {
+                    width: 100vw;
+                    height: 100vh;
+                    background-color:lightskyblue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .box {
+                    width: 40vw;
+                    height: 80vh;
+                    background-color: #fff;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+                .name {
+                    font-size: 80px;
+                    margin: 20px 0 10px 0;
+                    display: flex;
+                    justify-content: center;
+                    font-family: 'poppins';
+                    font-weight: 400;
+                    font-style: oblique;
+                }
+                .signup {
+                    width: 32vw;
+                    height: 50vh;
+                    margin: auto;
+                    border: 1px solid black;
+                }
+                .sign {
+                    font-size: 40px;
+                    margin-left: 30px;
+                    font-style: italic;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 700;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .box2 {
+                    margin: auto;
+                    width: 30vw;
+                    height: 38vh;
+                }
+                label {
+                    font-size: 25px;
+                    margin: 30px 5px;
+                }
+                input {
+                    font-size: 15px;
+                    margin: 10px 0;
+                    width: 60%;
+                    height: 30px;
+                }
+                .username {
+                    margin-left: 5px;
+                }
+                .password {
+                    margin-left: 22px;
+                }
+                .signin {
+                    padding: 5px 8px;
+                    font-size:20px ;
+                    border-radius: 8px;
+                    margin-left: 10vw;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+                .signin:hover {
+                    background-color: grey;
+                    color: black;
+                } 
+                .signin:active {
+                    background-color: black;
+                    color: #fff;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <p class="name">IIT Jodhpur</p>
+                <div class="signup">
+                    <p class="sign">Sign In</p>
+                    <div class="box2">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <label  for="">User Name :</label>
+                            <input name="username" id="username" value="" type="text" class="username" placeholder="Enter User Name" required>
+                            <br>
+                            <label for="">Password :</label>
+                            <input name="password1" id="password" type="password" class="password" placeholder="Enter your Password" required>
+                            <br>
+                            <button onclick="" type="submit" class="signin">Sign In</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
